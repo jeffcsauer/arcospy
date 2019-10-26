@@ -1,2 +1,7 @@
 language: python
-script: test_majority.py
+python: 
+    - "3.7"
+install:
+  - pip install -r requirements.txt
+script:
+  - test_majority
