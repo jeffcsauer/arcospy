@@ -642,7 +642,7 @@ def pharmacy_raw(buyer_dea_no='', key=''):
     
     elif len(buyer_dea_no)<1 or len(buyer_dea_no)>9:
         
-        print("No valid FIPS code detected.")
+        print("No valid buyer DEA number detected.")
     
     else: 
         
