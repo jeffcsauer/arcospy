@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: arcospy
-Version: 0.0.1
+Version: 0.0.6
 Summary: Python version of the R arcos package
 Home-page: https://github.com/jeffcsauer/arcospy
 Author: Python translator: Jeffery Sauer. Original R Package Authors: Washington Post Data Investigations Team

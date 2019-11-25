@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name = "arcospy",
-	version = "0.0.1",
+	version = "0.0.6",
 	author = "Python translator: Jeffery Sauer. Original R Package Authors: Washington Post Data Investigations Team",
 	author_email = "jcsauer@terpmail.umd.edu",
 	description = "Python version of the R arcos package",
 	long_description = long_description,
 	long_description_content_type = "text/markdown",
 	url = "https://github.com/jeffcsauer/arcospy",
-	packages = setuptools.find_packages(),
+	py_modules = ['arcospy'],
 	classifiers = [
 		"Programming Language :: Python :: 3", 
 		"License :: OSI Approved :: MIT License", 

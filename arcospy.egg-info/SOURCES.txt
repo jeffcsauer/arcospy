@@ -1,6 +1,8 @@
 README.md
+arcospy.py
 setup.py
 arcospy/__init__.py
+arcospy/arcospy.py
 arcospy.egg-info/PKG-INFO
 arcospy.egg-info/SOURCES.txt
 arcospy.egg-info/dependency_links.txt
