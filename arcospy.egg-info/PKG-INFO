@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: arcospy
+Version: 0.0.1
+Summary: Python version of the R arcos package
+Home-page: https://github.com/jeffcsauer/arcospy
+Author: Python translator: Jeffery Sauer. Original R Package Authors: Washington Post Data Investigations Team
+Author-email: jcsauer@terpmail.umd.edu
+License: UNKNOWN
+Description: # arcospy
+        
+        ![Build Status](https://travis-ci.com/jeffcsauer/arcospy.svg?token=sRx5dHJBVzwnJnFuh3p9&branch=master)
+        
+        ----
+        
+        Welcome to `arcospy`, the unofficial python version of the [R `arcos` package](https://github.com/wpinvestigative/arcos) maintained by the Washington Post. `arcospy` is the result of a class project carried out at the University of Maryland in the Fall of 2019. The project was motivated by the Washington Post’s data-driven [story](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/#download-resources) on a large pain pill database recently made publicly available. 
+        
+        The `arcospy` module was built to offer the exact same functionality as `arcos`, with the only difference being the ability to run the API calls in python! All of the commands in `arcospy` inherit the names from the original commands in `arcos`. Both `arcos` and `arcospy` act as wrappers for the [DEA ARCOS dataset](https://arcos-api.ext.nile.works/__swagger__/). 
+        
+        **Disclaimer: please note that the author of this package, Jeff Sauer, is not affiliated with the Washington Post in any official capacity.** 
+        
+        ----
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approvied :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
