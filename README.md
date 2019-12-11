@@ -10,4 +10,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 
 **Disclaimer: please note that the author of this package, Jeff Sauer, is not affiliated with the Washington Post in any official capacity.** 
 
+**Updates (will be posted periodically)**:
+- 12/10/2019: added a new folder called [demos](https://github.com/jeffcsauer/arcospy/tree/master/demos). Inculdes a basic getting started guide as well as an introduction to making the data spatial.
+
 ----
