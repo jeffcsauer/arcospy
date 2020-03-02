@@ -1,8 +1,10 @@
 "","BUYER_COUNTY","BUYER_STATE","countyfips","STATE","COUNTY","county_name","NAME","variable","year","population"
-"1","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","POPESTIMATE2006",2006,1119507
-"2","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","POPESTIMATE2007",2007,1126585
-"3","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","POPESTIMATE2008",2008,1135173
+"1","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2006,1119507
+"2","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2007,1126585
+"3","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2008,1135173
 "4","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2009,1136224
 "5","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2010,1136522
 "6","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2011,1146195
 "7","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2012,1158039
+"8","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2013,1170623
+"9","HENNEPIN","MN","27053",27,53,"Hennepin","Hennepin County, Minnesota","B01003_001",2014,1184091
