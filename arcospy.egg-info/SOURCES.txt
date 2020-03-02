@@ -1,5 +1,4 @@
 README.md
-arcospy.py
 setup.py
 arcospy/__init__.py
 arcospy/arcospy.py
