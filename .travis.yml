@@ -1,6 +1,7 @@
 language: python
 python: 
     - "3.7"
+before_script: cd arcospy/tests/
 install:
   - pip install -r requirements.txt
-script: python /arcospy/tests/test_majority.py
+script: python test_majority.py
