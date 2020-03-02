@@ -4,4 +4,4 @@ python:
 install:
   - pip install -r requirements.txt
 before_script: cd arcospy/tests/
-script: python arcospy/tests/test_majority.py
+script: python test_majority.py
