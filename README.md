@@ -42,7 +42,7 @@ All functions are available on *The Washington Post* reference page [here](https
 
 # Contributing
 
-*The following is lifted directly from `contributing.md`*
+*[The following is lifted directly from `contributing.md`](https://github.com/jeffcsauer/arcos_arcospy_information/blob/master/contributing.md)*
 
 Contributions are welcome to both `arcos` and `arcospy`. For major contributions, please fork the master `arcos` or `arcospy` branch and then open a pull request with the suggested changes. We will then review the change and determine if there is a generalizable solution to both `R` and `Python`. If there is no generalizable solution, we will still strive to make your contribution visible on the respective Github page.
 
