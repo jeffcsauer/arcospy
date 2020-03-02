@@ -28,6 +28,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 # Updates
 
 **Updates (will be posted periodically)**:
+- 3/1/2020: Re-organized repository for readability. Updated testing documents. Fixed two small parameter issues with state-level query commands.  1.0.8 live and stable.
 - 1/22/2020: Carried out PEP8 styling for commands, added help information, and package header. Re-published package as 1.0.6 as the package is now considered stable.  
 - 1/14/2020: Reformatted `README.md` to provide more specific headers, installation instructions, requirements, and additional information.
 - 12/10/2019: added a new folder called [demos](https://github.com/jeffcsauer/arcospy/tree/master/demos). Inculdes a basic getting started guide as well as an introduction to making the data spatial.
