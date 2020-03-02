@@ -1,5 +1,4 @@
 # Import arcospy commands
-!pip install arcospy
 from arcospy import pharm_latlon, pharm_tracts, buyer_addresses, county_population, not_pharmacies, buyer_details, total_manufacturers_county
 import pandas as pd
 import os
