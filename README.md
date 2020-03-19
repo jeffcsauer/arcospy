@@ -28,6 +28,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 # Updates
 
 **Updates (will be posted periodically)**:
+- 3/18/2020: Added four new commands for business-level data, as well as updating documentation to reflect additional years now present in the data (up to 2014).
 - 3/1/2020: Re-organized repository for readability. Updated testing documents. Fixed two small parameter issues with state-level query commands.  1.0.8 live and stable.
 - 1/22/2020: Carried out PEP8 styling for commands, added help information, and package header. Re-published package as 1.0.6 as the package is now considered stable.  
 - 1/14/2020: Reformatted `README.md` to provide more specific headers, installation instructions, requirements, and additional information.
@@ -37,7 +38,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 
 # Use
 
-All functions are available on *The Washington Post* reference page [here](https://wpinvestigative.github.io/arcos/reference/index.html). Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2012. However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2012.
+All functions are available on *The Washington Post* reference page [here](https://wpinvestigative.github.io/arcos/reference/index.html). Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2014. However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2014.
 
 ---
 
