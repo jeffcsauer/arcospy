@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name = "arcospy",
-	version = "1.1.0",
+	version = "1.1.1",
 	author = "Python translator: Jeffery Sauer. Original R Package Authors: Washington Post Data Investigations Team",
 	author_email = "jcsauer@terpmail.umd.edu",
 	description = "Python version of the R arcos package",

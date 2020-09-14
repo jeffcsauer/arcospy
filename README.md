@@ -7,7 +7,7 @@
 
 # Introduction
 
-Welcome to `arcospy`, the python version of the [R `arcos` package](https://github.com/wpinvestigative/arcos) maintained by *The Washington Post*. `arcospy` is the result of a R-to-python translation project carried out at the University of Maryland in the Fall of 2019. The project was motivated by *The Washington Post’s* data-driven [story](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/#download-resources) on a large pain pill database recently made publicly available.
+Welcome to `arcospy`, the python version of the [R `arcos` package](https://github.com/wpinvestigative/arcos) maintained by *The Washington Post*. `arcospy` is the result of a R-to-python translation project carried out at the University of Maryland in the Fall of 2019. The project was motivated a *Washington Post* data-driven [story](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/#download-resources) on a large pain pill database recently made publicly available.
 
 The `arcospy` module was built to offer the exact same functionality as `arcos`, with the only difference being the ability to run the API calls in `python`! All of the commands in `arcospy` inherit the names from the original commands in `arcos`. Both `arcos` and `arcospy` act as wrappers for the [DEA ARCOS dataset](https://arcos-api.ext.nile.works/__swagger__/).
 
@@ -28,6 +28,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 # Updates
 
 **Updates (will be posted periodically)**:
+- 9/14/2020: Updated docs to reflect forthcoming publication of `arcos` and `arcospy` in *JOSS*.
 - 8/1/2020: Renamed demos to docs for development consistency. Added another example notebook demonstrating acquisition and manipulation of pharmacy-level data. Planning gathering of additional ARCOS reports. 
 - 3/18/2020: Added four new commands for business-level data, as well as updating documentation to reflect additional years now present in the data (up to 2014).
 - 3/1/2020: Re-organized repository for readability. Updated testing documents. Fixed two small parameter issues with state-level query commands.  1.0.8 live and stable.
