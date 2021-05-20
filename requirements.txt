@@ -1,4 +1,3 @@
 pandas>=0.20.0
 requests>=2.0.0
-arcospy>=1.0.0
-io
+arcospy>=1.3.0
