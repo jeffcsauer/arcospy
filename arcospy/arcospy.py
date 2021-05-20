@@ -1,3 +1,4 @@
+#arcospy.py
 """Welcome to arcospy, the python version of the R arcos package maintained by
 The Washington Post. arcospy is the result of a R-to-python translation
 project carried out at the University of Maryland in the Fall of 2019.
@@ -15,6 +16,7 @@ arcos github: https://github.com/wpinvestigative/arcos
 
 import pandas as pd
 import requests
+import io
 
 def buyer_addresses(county='', state='', key=''):
     """Get DEA designated addresses for each pharmacy
@@ -159,12 +161,10 @@ def combined_buyer_monthly(county='', state='', year='', key=''):
 
     return pd.DataFrame.from_records(requestdata)
 
-def county_list(county='', state='', key=''):
-    """Get total pills for each pharmacy in a county
+def county_list(key=''):
+    """Get dataframe of counties, states, and fips codes that are represented in the ARCOS data
 
     Args:
-        county: Filter the data to only this county (e.g. 'Mingo')
-        state: Filter the data to county within this state (e.g. 'WV')
         key: Key needed to make query successful (NOTE: only necessary arg)
 
     Returns:
@@ -176,9 +176,7 @@ def county_list(county='', state='', key=''):
 
     url = "https://arcos-api.ext.nile.works/v1/county_list"
 
-    params = {"county": county,
-              "state": state,
-              "key": key}
+    params = {"key": key}
 
     requestdata = requests.get(url, params=params)
 
@@ -240,9 +238,11 @@ def county_raw(county='', state='', key=''):
 
     requestdata = requests.get(url, params=params)
 
-    requestdata = requestdata.json()
+    # Deprecated due to changes in payload
+    #requestdata = requestdata.json()
 
-    return pd.DataFrame.from_records(requestdata)
+    # New transformation of delivery
+    return pd.read_csv(io.StringIO(requestdata.text), sep='\t')
 
 def county_raw_fips(fips='', key=''):
     """Data from from non-contiguous states not yet processed and available.
@@ -267,9 +267,11 @@ def county_raw_fips(fips='', key=''):
 
     requestdata = requests.get(url, params=params)
 
-    requestdata = requestdata.json()
+    # Deprecated due to changes in payload
+    #requestdata = requestdata.json()
 
-    return pd.DataFrame.from_records(requestdata)
+    # New transformation of delivery
+    return pd.read_csv(io.StringIO(requestdata.text), sep='\t')
 
 def drug_list(key=''):
     """Get list of drugs available in the ARCOS database
@@ -812,6 +814,8 @@ def drug_county_biz(buyer_bus_act='', drug='', county='', state='', key=''):
     requestdata = requestdata.json()
 
     return pd.DataFrame.from_records(requestdata)
+
+# Drug county raw may be deprecated - suggest to use drug_county_biz instead
 
 def drug_county_raw(buyer_bus_act='', drug='', fips='', key=''):
     """Returns all data by county (Will be large and could take extra time to load)

@@ -2,7 +2,6 @@
 
 ![Build Status](https://travis-ci.com/jeffcsauer/arcospy.svg?token=sRx5dHJBVzwnJnFuh3p9&branch=master)
 
-**Note: as of 5/20/2021 you may need to run `from arcospy import arcospy`. You can then access functions as `arcospy.county_raw()` among others. Will attempt to resolve this in the coming weeks.**
 
 ----
 
