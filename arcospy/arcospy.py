@@ -36,7 +36,7 @@ def buyer_addresses(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/buyer_details"
+    url = "https://ne.washingtonpost.com/arcos/v1/buyer_details"
 
     params = {"county": county,
               "state": state,
@@ -65,7 +65,7 @@ def buyer_details(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/buyer_details"
+    url = "https://ne.washingtonpost.com/arcos/v1/buyer_details"
 
     params = {"county": county,
               "state": state,
@@ -90,7 +90,7 @@ def buyer_list(key=''):
     if not key:
         print("Please supply a valid API key.")
 
-    url = "https://arcos-api.ext.nile.works/v1/buyer_list"
+    url = "https://ne.washingtonpost.com/arcos/v1/buyer_list"
 
     params = {"key": key}
 
@@ -118,7 +118,7 @@ def combined_buyer_annual(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/combined_buyer_annual"
+    url = "https://ne.washingtonpost.com/arcos/v1/combined_buyer_annual"
 
     params = {"county": county,
               "state": state,
@@ -148,7 +148,7 @@ def combined_buyer_monthly(county='', state='', year='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/combined_buyer_monthly"
+    url = "https://ne.washingtonpost.com/arcos/v1/combined_buyer_monthly"
 
     params = {"county": county,
               "state": state,
@@ -174,7 +174,7 @@ def county_list(key=''):
     if not key:
         print("Please supply a valid API key.")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_list"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_list"
 
     params = {"key": key}
 
@@ -201,7 +201,7 @@ def county_population(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_population"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_population"
 
     params = {"county": county,
               "state": state,
@@ -230,7 +230,7 @@ def county_raw(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_data"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_data"
 
     params = {"county": county,
               "state": state,
@@ -260,7 +260,7 @@ def county_raw_fips(fips='', key=''):
     elif not len(fips) > 1 or len(fips) > 6:
         print("No valid FIPS code detected.")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_fips_data"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_fips_data"
 
     params = {"fips": fips,
               "key": key}
@@ -287,7 +287,7 @@ def drug_list(key=''):
 
         print("Please supply a valid API key.")
 
-    url = "https://arcos-api.ext.nile.works/v1/drug_list"
+    url = "https://ne.washingtonpost.com/arcos/v1/drug_list"
 
     params = {"key": key}
 
@@ -311,7 +311,7 @@ def not_pharmacies(key=''):
     if not key:
         print("Please supply a valid API key.")
 
-    url = "https://arcos-api.ext.nile.works/v1/not_pharmacies"
+    url = "https://ne.washingtonpost.com/arcos/v1/not_pharmacies"
 
     params = {"key": key}
 
@@ -340,7 +340,7 @@ def pharm_cbsa(geoid='', county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/pharmacy_cbsa"
+    url = "https://ne.washingtonpost.com/arcos/v1/pharmacy_cbsa"
 
     params = {"geoid": geoid,
               "county": county,
@@ -371,7 +371,7 @@ def pharm_counties(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/pharmacy_counties"
+    url = "https://ne.washingtonpost.com/arcos/v1/pharmacy_counties"
 
     params = {"county": county,
               "state": state,
@@ -401,7 +401,7 @@ def pharm_latlon(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/pharmacy_latlon"
+    url = "https://ne.washingtonpost.com/arcos/v1/pharmacy_latlon"
 
     params = {"county": county,
               "state": state,
@@ -431,7 +431,7 @@ def pharm_tracts(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/pharmacy_tracts"
+    url = "https://ne.washingtonpost.com/arcos/v1/pharmacy_tracts"
 
     params = {"county": county,
               "state": state,
@@ -459,7 +459,7 @@ def pharmacy_raw(buyer_dea_no='', key=''):
     elif not len(buyer_dea_no) > 1 or len(buyer_dea_no) > 9:
         print("No valid buyer DEA number detected.")
 
-    url = "https://arcos-api.ext.nile.works/v1/pharmacy_data"
+    url = "https://ne.washingtonpost.com/arcos/v1/pharmacy_data"
 
     params = {"buyer_dea_no": buyer_dea_no,
               "key": key}
@@ -483,7 +483,7 @@ def raw_data(key=''):
     if not key:
         print("Please supply a valid API key.")
 
-    url = "https://arcos-api.ext.nile.works/v1/all_the_data"
+    url = "https://ne.washingtonpost.com/arcos/v1/all_the_data"
 
     params = {"key": key}
 
@@ -511,7 +511,7 @@ def reporter_addresses(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/reporter_details"
+    url = "https://ne.washingtonpost.com/arcos/v1/reporter_details"
 
     params = {"county": county,
               "state": state,
@@ -539,7 +539,7 @@ def state_population(state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/state_population"
+    url = "https://ne.washingtonpost.com/arcos/v1/state_population"
 
     params = {"state": state,
               "key": key}
@@ -567,7 +567,7 @@ def summarized_county_annual(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/combined_county_annual"
+    url = "https://ne.washingtonpost.com/arcos/v1/combined_county_annual"
 
     params = {"county": county,
               "state": state,
@@ -596,7 +596,7 @@ def summarized_county_monthly(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/combined_county_monthly"
+    url = "https://ne.washingtonpost.com/arcos/v1/combined_county_monthly"
 
     params = {"county": county,
               "state": state,
@@ -625,7 +625,7 @@ def total_distributors_county(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_distributors_county"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_distributors_county"
 
     params = {"county": county,
               "state": state,
@@ -653,7 +653,7 @@ def total_distributors_state(state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_distributors_state"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_distributors_state"
 
     params = {"state": state,
               "key": key}
@@ -681,7 +681,7 @@ def total_manufacturers_county(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_manufacturers_county"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_manufacturers_county"
 
     params = {"county": county,
               "state": state,
@@ -709,7 +709,7 @@ def total_manufacturers_state(state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_manufacturers_state"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_manufacturers_state"
 
     params = {"state": state,
               "key": key}
@@ -737,7 +737,7 @@ def total_pharmacies_county(county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_pharmacies_county"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_pharmacies_county"
 
     params = {"county": county,
               "state": state,
@@ -766,7 +766,7 @@ def total_pharmacies_state(state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/total_pharmacies_state"
+    url = "https://ne.washingtonpost.com/arcos/v1/total_pharmacies_state"
 
     params = {"state": state,
               "key": key}
@@ -801,7 +801,7 @@ def drug_county_biz(buyer_bus_act='', drug='', county='', state='', key=''):
     elif not len(state) == 2:
         print("Please supply the U.S. state (in abbreviated form) of interest.")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_data_drug"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_data_drug"
 
     params = {"buyer_bus_act": buyer_bus_act,
               "drug": drug,
@@ -839,7 +839,7 @@ def drug_county_raw(buyer_bus_act='', drug='', fips='', key=''):
         print("Please supply a zip code in 5 digit format \
               (e.g. ‘09003’ for Hartford, Connecticut).")
 
-    url = "https://arcos-api.ext.nile.works/v1/county_data_drug"
+    url = "https://ne.washingtonpost.com/arcos/v1/county_data_drug"
 
     params = {"buyer_bus_act": buyer_bus_act,
               "drug": drug,
