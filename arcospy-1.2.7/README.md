@@ -2,7 +2,6 @@
 
 ![Build Status](https://travis-ci.com/jeffcsauer/arcospy.svg?token=sRx5dHJBVzwnJnFuh3p9&branch=master)
 
-**Note: as of 5/20/2021 you may need to run `from arcospy import arcospy`. You can then access functions as `arcospy.county_raw()` among others.**
 
 ----
 
@@ -29,7 +28,6 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 # Updates
 
 **Updates (will be posted periodically)**:
-- 11/25/2023: Updated main `url` where the Washington Post is storing the data. Reorganized repo for readability. All commands should be back up and running. 
 - 5/20/2021: Changes in API payload required a minor update to certain raw data commands.
 - 9/14/2020: Updated docs to reflect forthcoming publication of `arcos` and `arcospy` in *JOSS*.
 - 8/1/2020: Renamed demos to docs for development consistency. Added another example notebook demonstrating acquisition and manipulation of pharmacy-level data. Planning gathering of additional ARCOS reports. 
