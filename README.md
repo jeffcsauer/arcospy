@@ -18,6 +18,19 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 
 `$ pip install arcospy`
 
+To make sure that `arcospy` is working, simply import the package and try to call a basic function that interacts with the WaPo API:
+
+```py
+>>> import arcospy
+>>> arcospy.county_list('WaPo')
+       BUYER_COUNTY BUYER_STATE countyfips
+0           AUTAUGA          AL      01001
+1           BALDWIN          AL      01003
+2           BARBOUR          AL      01005
+3              BIBB          AL      01007
+4            BLOUNT          AL      01009
+```
+
 ## Requirements
 
 `arcospy` requires `pandas>=0.20.0`, `requests>=2.0.0`, and `io`.
@@ -27,6 +40,7 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 # Updates
 
 **Updates (will be posted periodically)**:
+- 1/16/2024: Fixing package structure to get imports working, adding github actions for pypi
 - 11/25/2023: Updated main `url` where the Washington Post is storing the data. Reorganized repo for readability. All commands should be back up and running. 
 - 5/20/2021: Changes in API payload required a minor update to certain raw data commands.
 - 9/14/2020: Updated docs to reflect forthcoming publication of `arcos` and `arcospy` in *JOSS*.
