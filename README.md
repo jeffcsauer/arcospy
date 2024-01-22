@@ -1,18 +1,14 @@
 # arcospy
 
-![Build Status](https://travis-ci.com/jeffcsauer/arcospy.svg?token=sRx5dHJBVzwnJnFuh3p9&branch=master)
+[![PyPI version](https://badge.fury.io/py/arcospy.svg)](https://badge.fury.io/py/arcospy)
 
-----
-
-# Introduction
+## Introduction
 
 Welcome to `arcospy`, the python version of the [R `arcos` package](https://github.com/wpinvestigative/arcos) maintained by *The Washington Post*. `arcospy` is the result of a R-to-python translation project carried out at the University of Maryland in the Fall of 2019. The project was motivated a *Washington Post* data-driven [story](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/#download-resources) on a large pain pill database recently made publicly available.
 
 The `arcospy` module was built to offer the exact same functionality as `arcos`, with the only difference being the ability to run the API calls in `python`! All of the commands in `arcospy` inherit the names from the original commands in `arcos`. Both `arcos` and `arcospy` act as wrappers for the [DEA ARCOS dataset](https://arcos-api.ext.nile.works/__swagger__/).
 
-----
-
-# Installation
+## Installation
 
 `arcospy` is hosted on PyPI and is `pip` installable. To install `arcospy` on your machine, start a new terminal and run the following commands:
 
@@ -20,11 +16,9 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 
 ## Requirements
 
-`arcospy` requires `pandas>=0.20.0`, `requests>=2.0.0`, and `io`.
+`arcospy` requires `pandas>=0.20.0` and `requests>=2.0.0`. You may need to manually install these requirements if the build does not trigger.
 
----
-
-# Updates
+## Updates
 
 **Updates (will be posted periodically)**:
 - 1/22/2024: Fixed install issues.
@@ -38,16 +32,11 @@ The `arcospy` module was built to offer the exact same functionality as `arcos`,
 - 1/14/2020: Reformatted `README.md` to provide more specific headers, installation instructions, requirements, and additional information.
 - 12/10/2019: added a new folder called [demos](https://github.com/jeffcsauer/arcospy/tree/master/demos). Inculdes a basic getting started guide as well as an introduction to making the data spatial.
 
----
-
-# Use
+## Use
 
 All functions are available on *The Washington Post* reference page [here](https://wpinvestigative.github.io/arcos/reference/index.html). Example notebooks in python are available in the [docs](https://github.com/jeffcsauer/arcospy/tree/master/docs) folder. Additional example use cases are available in R [here](https://wpinvestigative.github.io/arcos/articles/). 
 
 Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2014. However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2014.
-
-
----
 
 # Contributing
 
@@ -69,4 +58,4 @@ Trackable issue pages are available on both the master `arcos` or `arcospy` Gith
 
 ---
 
-**Disclaimer: please note that the author of this package, Jeff Sauer, is not affiliated with the Washington Post in any official capacity.**
+**Disclaimer: please note that the author of this package, Jeff Sauer, is not affiliated with _The Washington Post_ in any official capacity.**
