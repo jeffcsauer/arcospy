@@ -1,1 +1,1 @@
-from arcospy import arcospy
+from .arcospy import *
