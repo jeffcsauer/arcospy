@@ -20,4 +20,6 @@ sdist
 develop-eggs
 .installed.cfg
 __pycache__
+*.pyc
 tmp/
+jcs/
