@@ -19,4 +19,8 @@ setuptools.setup(
 		"Operating System :: OS Independent",
 	],
 	python_requires = '>=3.6',
+        install_requires = [
+            'pandas>=0.20.0',
+            'requests>=2.0.0'
+        ],
 )
